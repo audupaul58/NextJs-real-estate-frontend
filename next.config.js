@@ -5,11 +5,12 @@ const nextConfig = {
 
    images: {
     domains: ['realprops.herokuapp.com', 'res.cloudinary.com'],
+    loader : "akamai",
+    path : "",
+
   },
 
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  
 }
 
 module.exports = nextConfig

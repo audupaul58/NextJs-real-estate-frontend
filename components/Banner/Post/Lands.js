@@ -22,14 +22,14 @@ const Rent = () => {
     console.log('Rent-data', data)
   return (
     <Container>
-    <Row flexWrap={'wrap'} className={styles.flexcon} >
+    <Row flexWrap={'wrap'} className={styles.flexcon}   >
 
       
        {
         data.slice(0, 6).map((item, index)=>(
-          <Col sm={6} md={4} m='auto' p='0'>
+          <Col sm={6} md={4} m='auto' p='0' key={index}>
             {
-              item.category ==='rent'?  <Post  item={item} key={index}/>: null
+              item.category ==='rent'?  <Post  item={item}/>: null
             }
         </Col>
         ))
